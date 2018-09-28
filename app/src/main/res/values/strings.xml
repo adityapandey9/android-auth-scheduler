@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">AppLogin</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_login">Login</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_username">Name</string>
+    <string name="prompt_news_text">Select News Categories</string>
+    <string name="news_sports">Sports</string>
+    <string name="news_research">Research</string>
+    <string name="news_entertainment">Entertainment</string>
+    <string name="news_tech">Tech</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="subit_btn">Submit</string>
+    <string name="logout_btn">Logout</string>
+    <string name="clean">Clean</string>
+    <string name="date_time">Date</string>
+    <string name="status">OK</string>
+    <string name="booking_success">Booking Confirmed</string>
+    <string name="booking_error">Slot not available</string>
+    <string name="booking_validation">Enter Name, Start date and End date</string>
+    <string name="action_sign_in">Sign in with Google</string>
+    <string name="action_sign_in_short">Login</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main">Sign In</string>
+    <string name="title_activity_user_form">UserForm</string>
+</resources>

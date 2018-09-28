@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/main_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_liberty7"
+            android:scaleType="fitXY"
+            />
+
+<FrameLayout
+    android:id="@+id/main_body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="150dp">
+
+    <com.example.adityapandey.applogin.Custom.MyTextView_Roboto_Regular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="#ffffff"
+        android:textSize="28sp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <com.example.adityapandey.applogin.Custom.MyTextView_Roboto_Regular
+            android:id="@+id/login_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mediatransperent_ract"
+            android:text="@string/prompt_login"
+            android:paddingTop="13dp"
+            android:paddingBottom="15dp"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:paddingStart="48dp"
+            android:paddingEnd="42dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#ffffff"/>
+
+            <com.example.adityapandey.applogin.Custom.MyTextView_Roboto_Regular
+                android:id="@+id/google_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_google"
+                android:drawablePadding="10dp"
+                android:background="@drawable/signup_ract"
+                android:text="@string/action_sign_in"
+                android:paddingTop="13dp"
+                android:paddingBottom="15dp"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:paddingStart="8dp"
+                android:paddingEnd="12dp"
+                android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+</FrameLayout>
+
+
+
+</RelativeLayout>

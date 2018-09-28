@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_user"
+    tools:context=".UserForm">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <com.example.adityapandey.applogin.Custom.EditText_Roboto_Regular
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeActionId="6"
+                android:hint="@string/prompt_username"
+                android:imeOptions="actionUnspecified"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:textColor="#1c252a"
+                android:textSize="18sp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/media_ract"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_news_text"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"/>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp">
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/entertainment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/news_entertainment"
+                    android:layout_margin="10dp"/>
+                <CheckBox
+                    android:id="@+id/research"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/news_research"
+                    android:layout_margin="10dp"/>
+            </TableRow>
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/sports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/news_sports"
+                    android:layout_margin="10dp"/>
+                <CheckBox
+                    android:id="@+id/tech"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/news_tech"
+                    android:layout_margin="10dp"/>
+            </TableRow>
+        </TableLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+            <LinearLayout
+                android:id="@+id/start_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="start"
+                android:background="@drawable/sign_ract"
+                android:onClick="timer"
+                android:padding="10dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/start_val"
+                    android:text="@string/start_time"
+                    android:textStyle="italic"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/end_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/signup_ract"
+                android:onClick="timer"
+                android:padding="10dp"
+                android:layout_alignParentEnd="true"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/end_val"
+                    android:text="@string/end_time"
+                    android:textStyle="italic"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/subit_btn"
+            android:textColor="#fff"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/submit_btn"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/logout_btn"
+            android:background="@drawable/logout_btn"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:onClick="logout"
+            />
+    </LinearLayout>
+
+</LinearLayout>
